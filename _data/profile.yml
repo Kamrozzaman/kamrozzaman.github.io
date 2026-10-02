@@ -1,0 +1,78 @@
+primary_name: "Md. Kamrozzaman Bhuiyan"
+navbar_name: "Kamrozzaman"
+
+positions:
+- logo: /assets/images/logos/enosis-favicon.png
+  url: https://www.enosisbd.com/
+  name: Senior Software Engineer <br/> @ Enosis Solutions
+
+location: Dhaka, Bangladesh
+email: "kamrozzamaan@gmail.com"
+cv_link: /assets/files/CV_Kamrozzaman.pdf
+gscholar: J6kJA_oAAAAJ
+github: Kamrozzaman
+linkedin: kamrozzaman
+# researchgate: https://www.researchgate.net/profile/YOUR-PROFILE  # uncomment once you claim your ResearchGate profile
+codeforces: Kamrozzaman
+codechef: Kamrozzaman
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    I am a <strong>Senior Software Engineer</strong> at <a href="https://enosisbd.com/" target="_blank">Enosis Solutions</a>, Dhaka,
+    where I build production C++ and C# software for an enterprise accounting platform used by businesses across North America.
+    My current focus is <strong>AI-driven development</strong>: I use agentic coding tools such as
+    <em>Claude Code</em>, <em>OpenAI Codex</em> and <em>GitHub Copilot</em> every day, and build agentic workflows
+    that make development, debugging and code review more productive on a large legacy codebase.
+    I received my B.Sc. in Computer Science and Engineering from
+    <a href="https://www.aust.edu/" target="_blank">Ahsanullah University of Science and Technology (AUST)</a>
+    with a CGPA of 3.814/4.00 (rank 6 of 123), and received the Dean's Award for Academic Excellence.
+  </p>
+  <p>
+    My research interests are <em>Generative AI</em>, <em>Large Language Models</em>, and <em>Software Engineering</em>.
+    I have co-authored work on generative models for Bengali handwriting, detection of AI-generated images, text, and audio,
+    and NLP for low-resource languages, published at ICCIT.
+    More recently, I have been working on <em>transfer learning for tabular data</em> with transformers and LLM fine-tuning,
+    aimed at domains that share no common features.
+    Before that I spent a lot of time on competitive programming: I am a Codeforces <strong>Expert</strong> (max 1644),
+    a CodeChef <strong>4★</strong> (max 1840), and participated twice in the ICPC Dhaka Regional.
+  </p>
+
+portrait_url: /assets/images/photos/kamrozzaman.png
+
+education:
+- name: Ahsanullah University of Science and Technology
+  logo: /assets/images/logos/aust.png
+  url: https://www.aust.edu/
+  position: >-
+    B.Sc. in Computer Science and Engineering <br/>
+    CGPA 3.814/4.00 (Rank 6/123) · Last 2 years: 3.942
+  date: Apr. 2018 - Jan. 2023
+
+experience:
+- name: Enosis Solutions
+  logo: /assets/images/logos/enosis-favicon.png
+  url: https://www.enosisbd.com/
+  position: >-
+    Senior Software Engineer <br/>
+    Enterprise accounting desktop platform (C++, C#, MFC, .NET 8)
+  date: Feb. 2025 - Present
+- name: Enosis Solutions
+  logo: /assets/images/logos/enosis-favicon.png
+  url: https://www.enosisbd.com/
+  position: >-
+    Software Engineer <br/>
+    Full-stack outsourcing platform (ASP.NET Core, React, Next.js)
+  date: Feb. 2023 - Jan. 2025
+
+awards:
+- name: Dean's Award for Academic Excellence, AUST
+  date: 2023
+- name: "ICPC Dhaka Regional, Onsite: 59th (AUST_4ZER01)"
+  date: 2022
+- name: "ICPC Dhaka Regional, Onsite: 65th (AUST_0Degree)"
+  date: 2021
+- name: "1st, Intra AUST Programming Contest, Spring (Individual)"
+  date: 2020
+- name: Half tuition fee waiver for 5 semesters, AUST
+  date: 2018–2022
