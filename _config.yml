@@ -13,12 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: "https://kamrozzaman.github.io"
 baseurl: "" # served at the site root, e.g. https://kamrozzaman.github.io
+description: >-
+  Md. Kamrozzaman Bhuiyan: Senior Software Engineer at Enosis Solutions.
+  Research in Generative AI, LLMs, and Software Engineering.
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-email-protect
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

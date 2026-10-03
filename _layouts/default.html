@@ -5,7 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% if page.navbar_title == 'Home' %}{{ site.data.profile.primary_name }}{% else %}{{ page.title }} | {{ site.data.profile.primary_name }}{% endif %}</title>
-    <meta name="description" content="Md. Kamrozzaman Bhuiyan: Senior Software Engineer at Enosis Solutions. Research in Generative AI, LLMs, and Software Engineering.">
+    {% assign page_title = site.data.profile.primary_name %}{% unless page.navbar_title == 'Home' %}{% assign page_title = page.title | append: ' | ' | append: site.data.profile.primary_name %}{% endunless %}
+    {% assign page_desc = page.description | default: site.description | strip_newlines %}
+    <meta name="description" content="{{ page_desc }}">
+    <meta name="author" content="{{ site.data.profile.primary_name }}">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    <!-- Social previews -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_desc }}">
+    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/photos/kamrozzaman-og.jpg' | absolute_url }}">
+    <meta property="og:site_name" content="{{ site.data.profile.primary_name }}">
+    <meta name="twitter:card" content="summary">
+    <!-- Structured data so search engines know who this site is about -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.data.profile.primary_name }}",
+        "alternateName": "{{ site.data.profile.navbar_name }}",
+        "url": "{{ '/' | absolute_url }}",
+        "image": "{{ '/assets/images/photos/kamrozzaman-og.jpg' | absolute_url }}",
+        "jobTitle": "Senior Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "Enosis Solutions", "url": "https://www.enosisbd.com/" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ahsanullah University of Science and Technology", "url": "https://www.aust.edu/" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+        "knowsAbout": ["Generative AI", "Large Language Models", "Software Engineering", "C++", "C#"],
+        "sameAs": [
+            "https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}",
+            "https://github.com/{{ site.data.profile.github }}",
+            "https://www.linkedin.com/in/{{ site.data.profile.linkedin }}",
+            "https://codeforces.com/profile/{{ site.data.profile.codeforces }}",
+            "https://www.codechef.com/users/{{ site.data.profile.codechef }}"
+        ]
+    }
+    </script>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/favicon-192.png' | relative_url }}">
     <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
