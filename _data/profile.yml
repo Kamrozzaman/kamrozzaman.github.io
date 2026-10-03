@@ -20,10 +20,10 @@ short_bio_text_justify: true
 short_bio: >-
   <p>
     I am a <strong>Senior Software Engineer</strong> at <a href="https://enosisbd.com/" target="_blank">Enosis Solutions</a>, Dhaka,
-    where I build production C++ and C# software for an enterprise accounting platform used by businesses across North America.
-    My current focus is <strong>AI-driven development</strong>: I use agentic coding tools such as
-    <em>Claude Code</em>, <em>OpenAI Codex</em> and <em>GitHub Copilot</em> every day, and build agentic workflows
-    that make development, debugging and code review more productive on a large legacy codebase.
+    where I develop C++ and C# software for an enterprise accounting platform used by businesses across North America.
+    In my day-to-day development I rely heavily on <strong>AI-driven development</strong>, working with agentic coding tools such as
+    <em>Claude Code</em>, <em>OpenAI Codex</em> and <em>GitHub Copilot</em>, and building agentic workflows
+    that make development, debugging and code review on a large legacy codebase more productive.
     I received my B.Sc. in Computer Science and Engineering from
     <a href="https://www.aust.edu/" target="_blank">Ahsanullah University of Science and Technology (AUST)</a>
     with a CGPA of 3.814/4.00 (rank 6 of 123), and received the Dean's Award for Academic Excellence.
