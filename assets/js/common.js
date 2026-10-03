@@ -38,4 +38,16 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    // re-layout [data-masonry] grids once fonts/images change item heights
+    function relayoutDataMasonry() {
+        document.querySelectorAll('[data-masonry]').forEach(function (el) {
+            var msnry = Masonry.data(el);
+            if (msnry) msnry.layout();
+        });
+    }
+    $(window).on('load resize', relayoutDataMasonry);
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(relayoutDataMasonry);
+    }
 })
