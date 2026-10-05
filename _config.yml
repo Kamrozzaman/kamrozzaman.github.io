@@ -39,6 +39,13 @@ plugins:
 
 timezone: Asia/Dhaka
 
+# Keep the Search Console verification file out of the sitemap
+defaults:
+  - scope:
+      path: "googled88891a1588b6872.html"
+    values:
+      sitemap: false
+
 collections:
   - publications
   - news

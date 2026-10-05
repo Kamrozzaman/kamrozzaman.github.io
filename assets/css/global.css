@@ -172,6 +172,14 @@ a.profile_href {
     letter-spacing: 0;
 }
 
+a.terminal-text:hover,
+a.terminal-text:focus,
+.navbar-light a.navbar-brand:hover,
+.navbar-light a.navbar-brand:focus {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
 a.pub-author-link,
 a.pub-author-link .pub-author-emph {
     color: var(--color-pub-item-link);
