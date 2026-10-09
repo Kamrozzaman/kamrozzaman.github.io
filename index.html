@@ -22,6 +22,8 @@ navbar_title: Home
 
         {% include widgets/research_overview.html %}
 
+        {% include widgets/collaborators_card.html %}
+
         {% if site.data.display.homepage.show_selected_publications %}
         {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
         {%

@@ -76,3 +76,25 @@ awards:
   date: 2020
 - name: Half tuition fee waiver for 5 semesters, AUST
   date: 2018–2022
+
+collaborators:
+- name: Dr. Manar D. Samad
+  url: https://www.ncat.edu/coe/departments/cs/people/faculty-and-staff.php
+  scholar: https://scholar.google.com/citations?user=yzTm154AAAAJ&hl=en
+  position: Associate Professor, Department of Computer Science
+  affiliation: North Carolina A&T State University, USA
+- name: Md. Rakibul Islam
+  url: https://aust.edu/cse/faculty_member/mr_md_rakibul_islam
+  scholar: https://scholar.google.com/citations?user=LSWdSeUAAAAJ&hl=en
+  position: Lecturer, Department of Computer Science and Engineering
+  affiliation: Ahsanullah University of Science and Technology
+- name: Md. Zahid Hossain
+  url: https://www.aust.edu/cse/faculty_member/mr_md_zahid_hossain
+  scholar: https://scholar.google.com/citations?user=sCGu9tkAAAAJ&hl=en
+  position: Lecturer, Department of Computer Science and Engineering
+  affiliation: Ahsanullah University of Science and Technology
+- name: Farhad Uz Zaman
+  url: https://seu.edu.bd/employee/profile/MDAxOTM5
+  scholar: https://scholar.google.com/citations?user=ZKzFCHwAAAAJ&hl=en
+  position: Lecturer, Department of Computer Science and Engineering
+  affiliation: Southeast University, Bangladesh
