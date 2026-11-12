@@ -4,6 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="color-scheme" content="light dark">
+    <!-- Pick the theme before anything paints: saved choice first, else the OS setting. -->
+    <script>
+        (function () {
+            var theme = null;
+            try { theme = localStorage.getItem('theme'); } catch (e) {}
+            if (theme !== 'light' && theme !== 'dark') {
+                theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <title>{% if page.navbar_title == 'Home' %}{{ site.data.profile.primary_name }}{% else %}{{ page.title }} | {{ site.data.profile.primary_name }}{% endif %}</title>
     {% assign page_title = site.data.profile.primary_name %}{% unless page.navbar_title == 'Home' %}{% assign page_title = page.title | append: ' | ' | append: site.data.profile.primary_name %}{% endunless %}
     {% assign page_desc = page.description | default: site.description | strip_newlines %}

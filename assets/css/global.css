@@ -19,6 +19,129 @@
     --shadow-publication-cover: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-pub-badge: 0 1px 3px rgba(0, 0, 0, 0.2);
     --pub-mobile-overlay: rgba(255, 255, 255, 0.9);
+    --color-card-bg: #ffffff;
+    --color-border: #dee2e6;
+    --color-text-muted: #6c757d;
+    --color-link: #007bff;
+    --color-link-hover: #0056b3;
+    --color-theme-toggle: #ffffff;
+    color-scheme: light;
+}
+
+/* Dark theme: values swapped in when <html data-theme="dark"> (set by the script in
+   _layouts/default.html from the visitor's choice or their OS setting). The same block
+   is repeated under prefers-color-scheme so the page is still dark with JS disabled. */
+:root[data-theme="dark"] {
+    --color-accent: #8fbf96;
+    --color-accent-hover: #5fd39a;
+    --color-link-card: #a9b6ff;
+    --color-pub-title: #b2c2ad;
+    --color-pub-item-link: #a3c48c;
+    --color-page-bg: #0f1214;
+    --color-text: #d4dadf;
+    --color-highlight-bg: #1d2a21;
+    --color-navbar-bg: #1a1f23;
+    --shadow-publication-cover: 0 2px 6px rgba(0, 0, 0, 0.5);
+    --shadow-pub-badge: 0 1px 3px rgba(0, 0, 0, 0.6);
+    --pub-mobile-overlay: rgba(23, 27, 31, 0.9);
+    --color-card-bg: #171b1f;
+    --color-border: #2d343a;
+    --color-text-muted: #969fa8;
+    --color-link: #6cb2ff;
+    --color-link-hover: #9ccbff;
+    color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+        --color-accent: #8fbf96;
+        --color-accent-hover: #5fd39a;
+        --color-link-card: #a9b6ff;
+        --color-pub-title: #b2c2ad;
+        --color-pub-item-link: #a3c48c;
+        --color-page-bg: #0f1214;
+        --color-text: #d4dadf;
+        --color-highlight-bg: #1d2a21;
+        --color-navbar-bg: #1a1f23;
+        --shadow-publication-cover: 0 2px 6px rgba(0, 0, 0, 0.5);
+        --shadow-pub-badge: 0 1px 3px rgba(0, 0, 0, 0.6);
+        --pub-mobile-overlay: rgba(23, 27, 31, 0.9);
+        --color-card-bg: #171b1f;
+        --color-border: #2d343a;
+        --color-text-muted: #969fa8;
+        --color-link: #6cb2ff;
+        --color-link-hover: #9ccbff;
+        color-scheme: dark;
+    }
+}
+
+/* Bootstrap 4 has no dark mode, so route the utility classes this site uses through the
+   theme variables above. In light mode these resolve to Bootstrap's own values. */
+a {
+    color: var(--color-link);
+}
+a:hover {
+    color: var(--color-link-hover);
+}
+.bg-white {
+    background-color: var(--color-card-bg) !important;
+}
+.card {
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
+}
+.border,
+.border-top,
+.border-bottom,
+.border-gray {
+    border-color: var(--color-border) !important;
+}
+hr {
+    border-top-color: var(--color-border);
+}
+.text-muted {
+    color: var(--color-text-muted) !important;
+}
+.text-body {
+    color: var(--color-text) !important;
+}
+.modal-content {
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
+}
+.modal-header,
+.modal-footer {
+    border-color: var(--color-border);
+}
+.close {
+    color: var(--color-text);
+}
+
+/* Light/dark switch in the navbar (_includes/navbar.html). */
+.theme-toggle {
+    background: none;
+    border: 0;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    color: var(--color-theme-toggle);
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s ease-in-out;
+}
+.theme-toggle:hover,
+.theme-toggle:focus {
+    opacity: 1;
+}
+.theme-toggle .theme-icon-dark {
+    display: none;
+}
+:root[data-theme="dark"] .theme-toggle .theme-icon-dark {
+    display: inline;
+}
+:root[data-theme="dark"] .theme-toggle .theme-icon-light {
+    display: none;
 }
 
 /* Publications page: year sidebar (scrollspy). */
