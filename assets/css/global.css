@@ -25,6 +25,7 @@
     --color-link: #007bff;
     --color-link-hover: #0056b3;
     --color-theme-toggle: #ffffff;
+    --color-nav-hover: #c4e3c8;
     color-scheme: light;
 }
 
@@ -49,6 +50,7 @@
     --color-text-muted: #969fa8;
     --color-link: #6cb2ff;
     --color-link-hover: #9ccbff;
+    --color-nav-hover: #c9efce;
     color-scheme: dark;
 }
 
@@ -71,6 +73,7 @@
         --color-text-muted: #969fa8;
         --color-link: #6cb2ff;
         --color-link-hover: #9ccbff;
+        --color-nav-hover: #c9efce;
         color-scheme: dark;
     }
 }
@@ -277,6 +280,33 @@ a.profile_href {
 .navbar .nav-item.active .nav-link {
     color: var(--color-nav-active-text);
     font-weight: 600;
+}
+
+/* The navbar is dark in both themes, so hover and the mobile "Menu" button need light
+   colours (Bootstrap's navbar-light defaults are near-black and vanish here). */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--color-nav-hover);
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--color-accent);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:focus {
+    color: var(--color-nav-hover);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Expanded mobile menu: a divider above the links so they don't run into the header row. */
+@media (max-width: 575.98px) {
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        margin-top: 0.5rem;
+    }
 }
 
 .navbar-light .navbar-brand,
